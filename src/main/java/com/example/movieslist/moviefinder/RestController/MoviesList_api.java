@@ -15,7 +15,7 @@ public class MoviesList_api {
         String prompt="give me the List of 10 telugu movies released in 2010";
         String model="gpt-3.5-turbo";
         String requestbody = "{\"model\": \"" + model + "\", \"messages\": [{\"role\": \"user\", \"content\": \"" + prompt + "\"}]}";
-        askGpt=new ConnecttoChatGpt("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","https://api.openai.com/v1/chat/completions",requestbody);
+        askGpt=new ConnecttoChatGpt("apikey","https://api.openai.com/v1/chat/completions",requestbody);
 
         return askGpt.requestGPT();
     }
