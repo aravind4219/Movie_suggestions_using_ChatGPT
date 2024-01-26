@@ -1,12 +1,19 @@
 package com.example.movieslist.moviefinder.RestController;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+
+@Controller
 public class MoviesList_api {
    private ConnecttoChatGpt askGpt;
 
-    @RequestMapping ("/")
+    @RequestMapping("/")
+    public String SearchBox()
+    {
+        return "searchbox";
+    }
+    @RequestMapping ("chatgpt")
     public String MoviesList()
 
     {
