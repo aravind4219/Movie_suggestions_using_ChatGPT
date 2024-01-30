@@ -1,6 +1,4 @@
 package com.example.movieslist.moviefinder.RestController;
-
-
 import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
 
