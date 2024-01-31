@@ -6,7 +6,14 @@
 </head>
 <body>
 <form th:action="@{/chatgpt}" method="POST">
-  <input type="text" name="moviedetails" placeholder="What's your Name?"/>
+  HeroName: <input type="text" name="hero_name" />
+  <br><br>
+  HeroineName: <input type="text" name="heroine_name" />
+  <br><br>
+  Director: <input type="text" name="director"/>
+  <br><br>
+  Year: <input type="number" name="year_released"  min="1990" max="2023" required/>
+  <br><br>
   <input type="submit" />
 </form>
 </body>
