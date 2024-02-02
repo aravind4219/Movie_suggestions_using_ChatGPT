@@ -24,6 +24,6 @@ public class MoviesList_api {
         String requestbody = "{\"model\": \"" + model + "\", \"messages\": [{\"role\": \"user\", \"content\": \"" + prompt + "\"}]}";
         askGpt=new ConnecttoChatGpt("apikey","https://api.openai.com/v1/chat/completions",requestbody);
 
-        return "haiii this is chat gpt connection";
+        return "response";
     }
 }
