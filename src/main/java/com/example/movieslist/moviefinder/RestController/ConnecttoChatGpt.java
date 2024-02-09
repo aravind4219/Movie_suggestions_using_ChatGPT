@@ -23,5 +23,9 @@ public class ConnecttoChatGpt {
        ResponseEntity<String> responseEntity = restTemplate.exchange(apiurl, HttpMethod.POST, requestEntity, String.class);
        return responseEntity.getBody();
    }
+    public String process_chat_GPT_Response()
+    {
+return null;
+    }
 
 }
